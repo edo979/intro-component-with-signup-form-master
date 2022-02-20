@@ -58,7 +58,7 @@ main {
     box-shadow: 0 9px 0 rgba($color: #000000, $alpha: 0.2);
   }
   .card {
-    padding: 25px;
+    padding: 25px 50px;
     margin-bottom: 25px;
     background-color: $Blue;
     p {
@@ -119,6 +119,29 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
+    gap: 30px;
     place-items: center;
+  }
+
+  .desktop-left {
+    text-align: left;
+    h1 {
+      line-height: 1;
+      max-width: 450px;
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  .desktop-right {
+    width: 100%;
+  }
+
+  form,
+  .card,
+  .desktop-left {
+    max-width: 540px;
   }
 }
