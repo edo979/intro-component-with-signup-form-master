@@ -75,34 +75,50 @@ main {
   border-radius: 5px;
 }
 
-.desktop-right form input {
-  padding: 20px;
+.desktop-right form .input-group {
+  position: relative;
   margin: 5px 0 15px;
+}
+
+.desktop-right form .input-group input {
+  width: 100%;
+  padding: 20px;
   border: 1px solid #b9b6d3;
-}
-
-.desktop-right form input::-webkit-input-placeholder {
-  color: #9a96c0;
-  font-weight: 700;
+  font-family: inherit;
+  color: #3e3c49;
   font-weight: 600;
 }
 
-.desktop-right form input:-ms-input-placeholder {
+.desktop-right form .input-group input:focus {
+  outline: 1px solid #6055a5;
+}
+
+.desktop-right form .input-group input::-webkit-input-placeholder {
   color: #9a96c0;
-  font-weight: 700;
   font-weight: 600;
 }
 
-.desktop-right form input::-ms-input-placeholder {
+.desktop-right form .input-group input:-ms-input-placeholder {
   color: #9a96c0;
-  font-weight: 700;
   font-weight: 600;
 }
 
-.desktop-right form input::placeholder {
+.desktop-right form .input-group input::-ms-input-placeholder {
   color: #9a96c0;
-  font-weight: 700;
   font-weight: 600;
+}
+
+.desktop-right form .input-group input::placeholder {
+  color: #9a96c0;
+  font-weight: 600;
+}
+
+.desktop-right form .input-group .error-text {
+  padding: 0;
+  text-align: right;
+  font-style: italic;
+  font-weight: 500;
+  color: #ff7a7a;
 }
 
 .desktop-right form .btn {
