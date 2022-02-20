@@ -90,7 +90,7 @@ main {
   font-weight: 600;
 }
 
-.desktop-right form .input-group input:focus {
+.desktop-right form .input-group input:focus, .desktop-right form .input-group input:hover {
   outline: 1px solid #6055a5;
 }
 
@@ -115,6 +115,7 @@ main {
 }
 
 .desktop-right form .input-group .error-text {
+  display: none;
   padding: 0;
   text-align: right;
   font-style: italic;
@@ -132,6 +133,12 @@ main {
   -webkit-box-shadow: 0 5px 0 #2fb67c;
           box-shadow: 0 5px 0 #2fb67c;
   font-family: inherit;
+}
+
+.desktop-right form .btn:hover {
+  background-color: #61d6a3;
+  -webkit-box-shadow: 0 5px 0 #40ce91;
+          box-shadow: 0 5px 0 #40ce91;
 }
 
 .desktop-right form p {

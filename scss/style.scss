@@ -92,7 +92,8 @@ main {
         color: $Dark-Blue;
         font-weight: 600;
 
-        &:focus {
+        &:focus,
+        &:hover {
           outline: 1px solid $Blue;
         }
         &::placeholder {
@@ -101,6 +102,7 @@ main {
         }
       }
       .error-text {
+        display: none;
         padding: 0;
         text-align: right;
         font-style: italic;
@@ -117,6 +119,10 @@ main {
       text-transform: uppercase;
       box-shadow: 0 5px 0 darken($color: $Green, $amount: 6%);
       font-family: inherit;
+      &:hover {
+        background-color: lighten($color: $Green, $amount: 10%);
+        box-shadow: 0 5px 0 lighten($color: $Green, $amount: 2%);
+      }
     }
     p {
       padding: 0 20px;
