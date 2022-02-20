@@ -8,11 +8,22 @@ btn.addEventListener('click', (e) => {
     const input = inputEl.querySelector('input')
 
     if (input.value == '') {
-      inputEl.classList.add('error')
+      // check if p element created
+      if (!inputEl.querySelector('p')) {
+        const pEl = document.createElement('p')
+        pEl.classList.add('error-text')
+        pEl.innerText = `${input.placeholder} cannot be empty`
+
+        inputEl.appendChild(pEl)
+      }
 
       if (input.placeholder === 'Email Address') {
-        inputEl.querySelector('p').innerText = 'Email Address cannot be empty'
+        inputEl.querySelector(
+          'p'
+        ).innerText = `${input.placeholder} cannot be empty`
       }
+
+      inputEl.classList.add('error')
     } else {
       inputEl.classList.remove('error')
 
