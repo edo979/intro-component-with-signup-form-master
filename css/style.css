@@ -83,7 +83,7 @@ main {
 
 .desktop-right form .input-group input {
   width: 100%;
-  padding: 20px;
+  padding: 15px 20px;
   border: 1px solid #b9b6d3;
   font-family: inherit;
   color: #3e3c49;
@@ -121,6 +121,41 @@ main {
   font-style: italic;
   font-weight: 500;
   color: #ff7a7a;
+}
+
+.desktop-right form .input-group.error input {
+  outline: 1px solid #ff7a7a;
+}
+
+.desktop-right form .input-group.error input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.desktop-right form .input-group.error input:-ms-input-placeholder {
+  color: transparent;
+}
+
+.desktop-right form .input-group.error input::-ms-input-placeholder {
+  color: transparent;
+}
+
+.desktop-right form .input-group.error input::placeholder {
+  color: transparent;
+}
+
+.desktop-right form .input-group.error .error-text {
+  display: block;
+}
+
+.desktop-right form .input-group.error .error-text::after {
+  content: '';
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/icon-error.svg");
+  background-size: cover;
 }
 
 .desktop-right form .btn {
